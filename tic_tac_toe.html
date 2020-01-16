@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" > 
+  <head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <script src="tictactoe.js" async></script>
+    <style>
+        table{box-sizing: border-box; font-size: 30px; width:30%; margin-left:auto; margin-right:auto; height:400px}
+        .fill{box-sizing: border-box; height:100px; width:100px; background-color: lightgrey;}
+        .player{box-sizing: border-box; height:100px; width:100px; background-color: lightcyan;}
+        .comp{box-sizing: border-box; height:100px; width:100px; background-color: lightpink;}
+        input[type="button"]{font-size: 24px; color:black;}
+    </style>
+  </head>
+  <body>
+    <table>
+        <tr>
+          <th><input type="button" id="11" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="12" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="13" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="14" value=" " onclick="playerMove(this)" class="fill"></th>
+        </tr>
+        <tr>
+          <th><input type="button" id="21" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="22" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="23" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="24" value=" " onclick="playerMove(this)" class="fill"></th>
+        </tr>
+        <tr>
+          <th><input type="button" id="31" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="32" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="33" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="34" value=" " onclick="playerMove(this)" class="fill"></th>
+        </tr>
+        <tr>
+          <th><input type="button" id="41" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="42" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="43" value=" " onclick="playerMove(this)" class="fill"></th>
+          <th><input type="button" id="44" value=" " onclick="playerMove(this)" class="fill"></th>
+        </tr>
+    </table>
+    <button onclick="reset()">Reset</button>
+
+  </body>
+</html>
